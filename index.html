@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- TITLE -->
+        <title>Document</title>
+
+        <!-- FAVICONS -->
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicons/android-chrome-512x512.png">
+        <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+        <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- JAVASCRIPT -->
+        <script defer src="assets/js/main.js"></script>
+
+        <!-- GOOGLE ANALYTICS -->
+         <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9NN89HPPJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-Y9NN89HPPJ');
+        </script>
+    </head>
+    <body>
+        <main>
+            <div class="splash" id="red"></div>
+            <div class="splash" id="green"></div>
+            <div class="splash" id="yellow"></div>
+            <div class="splash" id="blue"></div>
+            <div class="splash" id="white"></div>
+            
+            <section class="about-me">
+                <div class="personal">
+                    <div class="box">
+                        <img id="avatar" alt="Profile picture" src="assets/img/me/picture.jpg">
+                    </div>
+                    <div class="box">
+                        <h1>Velimir Paleksić</h1>
+                        <h3>📍 Bosnia and Herzegovina</h3>
+                    </div>
+                </div>
+                <span id="job-title">Full Stack<br><strong>Developer</strong></span>
+            </section>
+
+            <section class="socials">
+                <div class="social">
+                    <button id="resume">
+                        <img alt="Resume" src="assets/img/svg/resume.svg">
+                        Resume
+                    </button>
+                </div>
+                <div class="social">
+                    <a target="_blank" alt="Github" href="https://github.com/velimirpaleksic">
+                        <img alt="Github" src="assets/img/svg/github.svg">
+                    </a>
+                </div>
+                <div class="social">
+                    <a target="_blank" alt="Instagram" href="https://instagram.com/velimirpaleksic">
+                        <img alt="Instagram" src="assets/img/svg/instagram.svg">
+                    </a>
+                </div>
+            </section>
+
+        <!--
+            <div class="title">
+                <h1>Experience</h1>
+                <hr>
+            </div>
+            <section class="my-work">
+                <div class="select-tab">
+                    <button onclick="selectProjects(this)" class="selected">Work</button>
+                    <button onclick="selectProjects(this)">Education</button>
+                </div>
+                <div class="display-tab">
+                    <div class="tab-content">
+                        <img src="" alt="Logo">
+                        <div class="text-box">
+                            <p>January xxxx - December xxxx</p>
+                            <h4>Company Name</h4>
+                            <h5>Job Title</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        -->
+
+            <div class="title">
+                <h1>Skills</h1>
+                <hr>
+            </div>
+            <section class="skills">
+                <div class="skill">
+                    <img alt="Javascript" src="assets/img/svg/javascript.svg">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill">
+                    <img alt="Python" src="assets/img/svg/python.svg">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img alt="Wordpress" src="assets/img/svg/wordpress.svg">
+                    <p>Wordpress</p>
+                </div>
+                <div class="skill">
+                    <img alt="Javascript" src="assets/img/svg/c-sharp.svg">
+                    <p>C#</p>
+                </div>
+                <div class="skill">
+                    <img alt="MySql" src="assets/img/svg/mysql.svg">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill">
+                    <img alt="PHP" src="assets/img/svg/php.svg">
+                    <p>PHP</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/svg/powershell.svg">
+                    <p>PowerShell</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/svg/photoshop.svg">
+                    <p>Photoshop</p>
+                </div>
+                <div class="skill">
+                    <img alt="MySql" src="assets/img/svg/github.svg">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/svg/burp-suite.svg">
+                    <p>Burp Suite</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/svg/nmap.svg">
+                    <p>NMap</p>
+                </div>
+            </section>
+
+            <div class="title">
+                <div class="title-extra">
+                    <h1>Projects</h1>
+                    <!-- 
+                        <a href="projects.html">View More</a>
+                    -->
+                </div>
+                <hr>
+            </div>
+            <section class="projects">
+                <div class="select-tab">
+                    <button onclick="selectProjects(this)">Personal</button>
+                    <button onclick="selectProjects(this)" class="selected">Commercial</button>
+                </div>
+
+                <div id="personal" style="display: none;">
+                    <div class="project">
+                        <img src="assets/img/projects/pizza-corner.png" alt="Project image">
+                        <div class="info">
+                            <div class="text-box">
+                                <h4>Pizza Corner</h4>
+                                <p>Website design for Pizza Corner with a menu, reservation system, and contact options that work well on different devices.</p>
+                            </div>
+                            <div class="technologies">
+                                <div class="technology">
+                                    <img alt="Javascript" src="assets/img/svg/javascript.svg">
+                                    <p>Javascript</p>
+                                </div>
+                            </div>
+                            <div class="previews">
+                                <div class="preview">
+                                    <a target="_blank" href="https://github.com/velimirpaleksic/pizza-corner">
+                                        <img alt="Source" src="assets/img/svg/github.svg">
+                                        Source 
+                                    </a>
+                                </div>
+                                <div class="preview">
+                                    <a target="_blank" href="https://velimirpaleksic.github.io/pizza-corner/">
+                                        <img alt="Website" src="assets/img/svg/external-link.svg">
+                                        Website 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMMERCIAL USE WEBSITES -->
+                <div id="commercial" style="display: flex;">
+                    <div class="project">
+                        <img alt="Project image" src="assets/img/projects/osnovna-skola-sveti-sava.png">
+                        <div class="info">
+                            <div class="text-box">
+                                <h4>Osnovna Škola "Sveti Sava"</h4>
+                                <p>A straightforward website for "Sveti Sava" School featuring important educational resources, news, and event updates for students and parents.</p>
+                            </div>
+                            <div class="technologies">
+                                <div class="technology">
+                                    <img alt="Source" src="assets/img/svg/javascript.svg">
+                                    <p>Javascript</p>
+                                </div>
+                            </div>
+                            <div class="previews">
+                                <div class="preview">
+                                    <a target="_blank" href="https://github.com/velimirpaleksic/osnovna-skola-sveti-sava">
+                                        <img alt="Source" src="assets/img/svg/github.svg">
+                                        Source 
+                                    </a>
+                                </div>
+                                <div class="preview">
+                                    <a target="_blank" href="https://velimirpaleksic.github.io/osnovna-skola-sveti-sava/">
+                                        <img alt="Source" src="assets/img/svg/external-link.svg">
+                                        Website 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img alt="Project image" src="assets/img/projects/sportnet-cloud.png">
+                        <div class="info">
+                            <div class="text-box">
+                                <h4>SportNet</h4>
+                                <p>A dynamic sports news website providing the latest updates, scores, analysis, and coverage across various sports.</p>
+                            </div>
+                            <div class="technologies">
+                                <div class="technology">
+                                    <img alt="Wordpress" src="assets/img/svg/wordpress.svg">
+                                    <p>Wordpress</p>
+                                </div>
+                                <div class="technology">
+                                    <img alt="PHP" src="assets/img/svg/php.svg">
+                                    <p>PHP</p>
+                                </div>
+                                <div class="technology">
+                                    <img alt="MySql" src="assets/img/svg/mysql.svg">
+                                    <p>MySQL</p>
+                                </div>
+                                <div class="technology">
+                                    <img alt="Javascript" src="assets/img/svg/javascript.svg">
+                                    <p>Javascript</p>
+                                </div>
+                            </div>
+                            <div class="previews">
+                                <div class="preview">
+                                    <a target="_blank" href="https://github.com/velimirpaleksic/osnovna-skola-sveti-sava">
+                                        <img alt="Github" src="assets/img/svg/github.svg">
+                                        Source 
+                                    </a>
+                                </div>
+                                <div class="preview">
+                                    <a target="_blank" href="https://velimirpaleksic.github.io/osnovna-skola-sveti-sava/">
+                                        <img alt="Website" src="assets/img/svg/external-link.svg">
+                                        Website 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="title">
+                <hr>
+            </div>
+            <footer>
+                <div class="even-row">
+                    <div class="car-icon">
+                        <img src="assets/img/svg/racing-car.png" alt="Sports Car">
+                    </div>
+                    <div class="socials">
+                        <div class="social">
+                            <a target="_blank" alt="Github" href="https://github.com/velimirpaleksic">
+                                <img alt="Github" src="assets/img/svg/github.svg">
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a target="_blank" alt="Instagram" href="https://instagram.com/velimirpaleksic">
+                                <img alt="Instagram" src="assets/img/svg/instagram.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credits">
+                    <p>Made by <a href="https://github.com/velimirpaleksic">Velimir Paleksić</a>. Copyright © 2024 All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
