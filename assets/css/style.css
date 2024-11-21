@@ -350,7 +350,7 @@ button#resume:hover {
     transform-origin: center;
 }
 
-/* PROJECTS */
+/* SELECT TAB */
 .select-tab {
     width: 100%;
     border-radius: 0.4rem;
@@ -398,12 +398,18 @@ button#resume:hover {
     justify-content: space-between;
     gap: 1rem;
 }
-
 .projects .project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1 1 48%;
+    margin-top: 2rem;
+}
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 48%;
     margin-top: 2rem;
 }
 
@@ -414,7 +420,6 @@ button#resume:hover {
     object-position: top;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
-    margin-bottom: -0.6rem;
 }
 
 .projects .project .info {
@@ -422,8 +427,8 @@ button#resume:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
     padding: 1rem;
+    padding-top: 2rem;
     border: 1px solid;
     border-image: linear-gradient(to bottom, var(--border-color), rgba(0, 0, 0, 0)) 1;
     border-radius: 1rem;
@@ -971,4 +976,16 @@ footer a:hover {
     50% {
         opacity: 0.6;
     }
+}
+
+/*
+    MATRIX RAIN
+*/
+#matrix-canvas {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
