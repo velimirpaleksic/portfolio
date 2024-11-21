@@ -463,6 +463,7 @@ button#resume:hover {
 }
 
 .projects .project .technologies .technology {
+    user-select: none;
     padding: 0 0.4rem;
     border-radius: 0.2rem;
     background: var(--button-selected);
