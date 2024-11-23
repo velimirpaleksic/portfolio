@@ -204,9 +204,20 @@ main {
     justify-content: flex-start;
 }
 
-.about-me .personal .box img {
+.about-me .personal .box #avatar-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.about-me .personal .box #avatar-wrapper {
+    position: relative;
+}
+
+.about-me .personal .box #avatar {
     width: 7rem;
     height: 7rem;
+    cursor: pointer;
     border-radius: 100%;
     margin-right: 1rem;
     object-fit: cover;
@@ -214,12 +225,37 @@ main {
     transition: transform 0.4s ease-in-out; 
 }
 
-.about-me .personal .box img:hover {
-    transform: rotate(360deg);
+#avatar-container:hover #avatar {
+    transform: scale(1.1);
 }
 
-.about-me .personal .box h1 {
+#avatar-container:hover #ribbon {
+    display: block;
+}
+
+#ribbon {
+    display: none;
+    position: absolute;
+    top: 22.5%;
+    left: 10%;
+    transform: translateX(-40%);
+    font-size: 1rem;
+}
+
+.about-me .personal .box .info-text {
     margin-top: -0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.about-me .personal #waving-hand {
+    margin-left: 0.4rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 .about-me .personal .box .description {
@@ -231,6 +267,7 @@ main {
     margin-top: 0.3rem;
     color: var(--text-color-secondary);
 }
+
 
 /* SOCIALS */
 .socials {
@@ -262,18 +299,14 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 50%;
     color: var(--icon-color);
-    transition: background-color 0.3s, color 0.3s;
 }
 
-.social a:hover {
-    transform: rotate(360deg);
-    transition: all 0.3s ease-in-out 0s;
-    fill: var(--background-color);
+.social a img {
+    transition: transform 0.3s;
 }
 
 .social a:hover img {
-    width: 28px;
-    height: 28px;
+    transform: scale(1.1);
 }
 
 /* RESUME */
@@ -355,15 +388,15 @@ button#resume:hover {
     width: 100%;
     border-radius: 0.4rem;
     border: 1px solid var(--border-color);
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+    padding: 0.3rem 0.4rem;
     margin-bottom: 1rem;
 }
 
 .select-tab button {
-    width: 49%;
+    width: 100%;
     padding: 0.5rem;
     border-radius: 0.2rem;
     color: var(--button-text);
@@ -409,6 +442,7 @@ button#resume:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
     flex: 0 1 48%;
     margin-top: 2rem;
 }
@@ -420,6 +454,11 @@ button#resume:hover {
     object-position: top;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
+    transition: transform 0.5s ease;
+}
+
+.projects .project img:hover {
+    transform: scale(1.05);
 }
 
 .projects .project .info {
