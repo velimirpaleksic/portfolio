@@ -179,7 +179,7 @@ main {
     background: linear-gradient(to right, rgb(236, 236, 236), rgb(124, 124, 124));
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 0 -1px;
+    margin: 0 -0.4px;
     transition: margin 0.2s ease-in-out;
 }
 
@@ -204,15 +204,6 @@ main {
     justify-content: flex-start;
 }
 
-.about-me .personal .box #avatar-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.about-me .personal .box #avatar-wrapper {
-    position: relative;
-}
 
 .about-me .personal .box #avatar {
     width: 7rem;
@@ -225,21 +216,8 @@ main {
     transition: transform 0.4s ease-in-out; 
 }
 
-#avatar-container:hover #avatar {
+#avatar:hover {
     transform: scale(1.1);
-}
-
-#avatar-container:hover #ribbon {
-    display: block;
-}
-
-#ribbon {
-    display: none;
-    position: absolute;
-    top: 22.5%;
-    left: 10%;
-    transform: translateX(-40%);
-    font-size: 1rem;
 }
 
 .about-me .personal .box .info-text {
