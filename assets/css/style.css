@@ -101,7 +101,7 @@ body {
 
 /* MAIN */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -191,7 +191,7 @@ main {
 .about-me {
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
 }
@@ -203,7 +203,6 @@ main {
     flex-direction: row;
     justify-content: flex-start;
 }
-
 
 .about-me .personal .box #avatar {
     width: 7rem;
