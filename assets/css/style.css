@@ -136,6 +136,7 @@ body {
 }
 
 .title h1 {
+    width: max-content;
     transition: color 0.3s ease-out;
     font-family: monospace;
 }
