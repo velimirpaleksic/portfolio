@@ -1,4 +1,4 @@
-/* DEFINE VARIABLES */
+/* ROOT */
 :root {
     --accent-color: #FF0000;
     --secondary-accent: #B22222;
@@ -30,14 +30,18 @@ accent {
     color: var(--secondary-accent);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* MAIN */
 main {
     height: 100%;
     background-image: radial-gradient(circle, rgba(100, 100, 100, 0.1) 1px, transparent 1px);
     background-size: 2.5rem 2.5rem;
-}
-button:hover {
-    cursor: pointer;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* RESET STYLING */
@@ -97,13 +101,6 @@ body {
     line-height: 1.6;
     background: radial-gradient(ellipse at bottom, #0a1727 0%, #0b0c0f 100%);
     overflow-x: hidden;
-}
-
-/* MAIN */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 /* ROTATING ICONS */
@@ -314,7 +311,7 @@ button#resume:hover {
     background-color: transparent;
 }
 
-/* SVG icons */
+/* SOCIAL ICONS */
 .social a img {
     width: 24px;
     height: 24px;
@@ -1043,16 +1040,4 @@ footer a:hover {
     50% {
         opacity: 0.6;
     }
-}
-
-/*
-    MATRIX RAIN
-*/
-#matrix-canvas {
-    z-index: 9999;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
