@@ -101,5 +101,4 @@ function scrollToElement(selector, duration = 500) {
     requestAnimationFrame(step);
 }
 
-// Usage: Scroll to an element with ID "target" over 800ms
 //scrollToElement("#target", 800);
