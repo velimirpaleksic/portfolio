@@ -360,6 +360,55 @@ button#resume:hover {
     transform-origin: center;
 }
 
+/* CERTIFICATES */
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+.certificates .certificate {
+    flex: 1 1 calc(25% - 0.2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.certificates .certificate img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    object-position: center;
+}
+
+.certificates .certificate:hover img {
+    transform: scale(1.4);
+}
+
+.certificates .certificate p {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .certificates .certificate {
+        flex: 1 1 calc(50% - 0.2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates .certificate {
+        flex: 1 1 calc(50% - 0.2rem);
+    }
+}
+
 /* SELECT TAB */
 .select-tab {
     width: 100%;
