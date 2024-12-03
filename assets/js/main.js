@@ -3,7 +3,6 @@
 */
 const skillElements = document.querySelectorAll(".skills .skill, .technology, .preview");
 
-// Add event listeners for hover
 skillElements.forEach(skill => {
     skill.addEventListener("mouseenter", () => {
         const randomRotation = Math.random() * 70 - 35;
@@ -15,7 +14,6 @@ skillElements.forEach(skill => {
     });
 
     skill.addEventListener("mouseleave", () => {
-        // Reset rotation on hover out
         const element = skill.querySelector("svg, img");
         if (element) {
             element.style.transform = "rotate(0deg)";
@@ -35,21 +33,19 @@ document.querySelectorAll(".title h1").forEach(title => {
         let index = 0;
 
         const interval = setInterval(() => {
-            // Randomize all characters that are not yet locked
             scrambledText = scrambledText.map((char, i) =>
                 i >= index ? chars.charAt(Math.floor(Math.random() * chars.length)) : char
             );
 
-            // Lock in the correct character at the current index
             if (index < originalText.length) {
                 scrambledText[index] = originalText[index];
                 index++;
             } else {
-                clearInterval(interval); // Stop once all characters are locked in
+                clearInterval(interval);
             }
 
             title.textContent = scrambledText.join("");
-        }, 50); // Adjust speed as needed
+        }, 50);
     });
 });
 
