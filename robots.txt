@@ -1,5 +1,2 @@
-# Allow all search engines to crawl everything
 User-agent: *
-
-# Sitemap location
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://velimirpaleksic.github.io/portfolio/sitemap.xml

@@ -12,12 +12,12 @@
     --button-text: #FFFFFF;
     --border-color: #444444;
     --dark-border-color: rgb(20, 20, 20);
-    --button-selected: rgba(10, 10, 10, 0.3);
+    --button-selected: rgba(10, 10, 10, 0.25);
 
     --link-hover: var(--secondary-accent);
     --icon-color: #CCCCCC;
 
-    --star-color: rgba(187, 187, 187, 0.4);
+    --star-color: rgba(180, 180, 180, 0.4);
 }
 
 /* SMOOTH SCORLLING */
