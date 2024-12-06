@@ -12,7 +12,7 @@
     --button-text: #FFFFFF;
     --border-color: #444444;
     --dark-border-color: rgb(20, 20, 20);
-    --button-selected: rgba(10, 10, 10, 0.25);
+    --button-selected: rgba(10, 10, 10, 0.4);
 
     --link-hover: var(--secondary-accent);
     --icon-color: #CCCCCC;
@@ -142,7 +142,7 @@ body {
 .title hr {
     border: none;
     height: 1px;
-    background: linear-gradient(to right, var(--border-color), rgba(68, 68, 68, 0));
+    background: linear-gradient(to right, rgb(100,100,100,0.4), rgba(0,0,0, 0));
 }
 
 /* TOP BAR*/
@@ -322,7 +322,7 @@ button#resume:hover {
 .my-work .display-tab {
     width: 100%;
     height: max-content;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--button-background);
     border-radius: 0.2rem;
 }
 
@@ -411,7 +411,8 @@ button#resume:hover {
 .select-tab {
     width: 100%;
     border-radius: 0.4rem;
-    border: 1px solid var(--border-color);
+    background: rgba(0,0,0, 0.1);
+    border: 1px solid var(--button-selected);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.4rem;
@@ -497,7 +498,7 @@ button#resume:hover {
     padding: 1.2rem;
     padding-top: 1.6rem;
     border: 1px solid;
-    border-image: linear-gradient(to bottom, var(--border-color), rgba(0, 0, 0, 0)) 1;
+    border-image: linear-gradient(to bottom, rgb(100,100,100,0.4), rgba(0,0,0, 0)) 1;
     border-radius: 1rem;
 }
 
@@ -531,11 +532,11 @@ button#resume:hover {
 
 .projects .project .technologies .technology {
     user-select: none;
-    padding: 0 0.4rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 0.2rem;
     background: var(--button-selected);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
