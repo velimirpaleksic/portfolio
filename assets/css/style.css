@@ -273,10 +273,15 @@ body {
     border: none;
     border-radius: 50%;
     color: var(--icon-color);
+    transition: border-radius 0.2s ease-in-out;
 }
 
 .social a img {
     transition: transform 0.3s;
+}
+
+.social a:hover {
+    border-radius: 0.6rem;
 }
 
 .social a:hover img {
@@ -453,11 +458,11 @@ button#resume:hover {
 .select-tab .selected {
     background: var(--accent-color);
     border: 1px solid var(--accent-color);
+    transition: background 0.4s ease-in-out, border 0.2s ease-in-out;
 }
 
 .select-tab .selected:hover {
     background: var(--secondary-accent);
-    border: 1px solid var(--accent-color);
 }
 
 /* PROJECTS */
@@ -637,6 +642,23 @@ button#resume:hover {
     .projects .project .previews .preview {
         width: 100%;
     }
+}
+
+/* SEE MORE PROJECTS */
+.see-more-projects {
+    text-align: center;
+    font-style: italic;
+    color: rgba(140, 140, 140, 0.5);
+}
+
+.see-more-projects a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color 0.2s ease-in-out;
+}
+
+.see-more-projects a:hover {
+    color: var(--secondary-accent);
 }
 
 /* FOOTER */
