@@ -3,7 +3,7 @@
 ### Previews 👀
 
 - ### [Live Website](https://velimirpaleksic.github.io/portfolio/)
-- ### [Minimalistic version](https://velimirpaleksic.github.io/minimalistic)
+- ### [Minimalistic version](https://velimirpaleksic.github.io/portfolio/minimalistic)
 
 ### Bugs & features 🧩
 - [Report bug](https://github.com/velimirpaleksic/portfolio/issues)
