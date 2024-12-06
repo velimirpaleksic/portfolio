@@ -47,7 +47,7 @@ document.querySelectorAll(".title h1").forEach(title => {
     const originalText = title.textContent;
 
     title.addEventListener("mouseenter", () => {
-        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         let scrambledText = Array.from(originalText).map(() => chars.charAt(Math.floor(Math.random() * chars.length)));
         let index = 0;
 

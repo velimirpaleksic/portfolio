@@ -118,6 +118,7 @@ body {
     user-select: none;
     margin-top: 3rem;
     margin-bottom: 0.6rem;
+    text-transform: uppercase;
 }
 
 .title-extra {
