@@ -30,7 +30,8 @@ accent {
     color: var(--secondary-accent);
 }
 
-button:hover {
+button:hover,
+a:hover {
     cursor: pointer;
 }
 
@@ -248,9 +249,9 @@ body {
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0,0,0, 0.1);
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(1px);
     border-radius: 20px;
     z-index: 9999;
 }
@@ -268,8 +269,8 @@ body {
     justify-content: center;
     width: 2.8rem;
     height: 2.8rem;
-    background-color: var(--button-selected);
-    border: 1px solid var(--border-color);
+    background: rgba(0,0,0,0.3);
+    border: none;
     border-radius: 50%;
     color: var(--icon-color);
 }
