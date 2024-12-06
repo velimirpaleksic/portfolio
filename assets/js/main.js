@@ -25,6 +25,21 @@ skillElements.forEach(skill => {
     });
 });
 
+/* 
+    WAVING HAND
+*/
+document.addEventListener("DOMContentLoaded", () => {
+    const wavingHand = document.getElementById("waving-hand");
+  
+    wavingHand.addEventListener("mouseenter", () => {
+        wavingHand.classList.add("waving");
+    });
+  
+    wavingHand.addEventListener("mouseleave", () => {
+        wavingHand.classList.remove("waving");
+    });
+});  
+
 /*
     TEXT SCRAMBLE
 */
