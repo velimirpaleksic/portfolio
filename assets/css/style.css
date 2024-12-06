@@ -666,7 +666,7 @@ button#resume:hover {
 .see-more-projects {
     text-align: center;
     font-style: italic;
-    color: rgba(140, 140, 140, 0.5);
+    color: rgba(140, 140, 140, 0.7);
 }
 
 .see-more-projects a {
