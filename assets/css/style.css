@@ -420,19 +420,17 @@ button#resume:hover {
 }
 
 .select-tab button {
+    border: none;
     width: 100%;
     padding: 0.5rem;
     border-radius: 0.2rem;
     color: var(--button-text);
-    border: 1px solid var(--button-selected);
     background: var(--button-selected);
     transition: color 0.4s ease-in-out, background 0.4s ease-in-out, border 0.4s ease-in-out;
 }
 
 .select-tab button:hover {
-    color: var(--text-color-secondary);
     background: var(--border-color);
-    border: 1px solid var(--button-selected);
 }
 
 .select-tab .selected {
