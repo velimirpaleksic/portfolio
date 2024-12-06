@@ -5,8 +5,12 @@ const skillElements = document.querySelectorAll(".skills .skill, .technology, .p
 
 skillElements.forEach(skill => {
     skill.addEventListener("mouseenter", () => {
-        const randomRotation = Math.random() * 70 - 35;
+        let randomRotation;
         
+        do {
+            randomRotation = Math.random() * 60 - 30;
+        } while (randomRotation > -15 && randomRotation < 15);
+
         const element = skill.querySelector("svg, img");
         if (element) {
             element.style.transform = `rotate(${randomRotation}deg)`;
