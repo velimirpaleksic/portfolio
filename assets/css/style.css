@@ -707,6 +707,7 @@ button#resume:hover {
 .notfound404 h1 {
     font-size: 5rem;
     margin-bottom: 0;
+    text-shadow: 0 0 10px rgb(60,60,60), 0 0 20px rgb(60,60,60), 0 0 30px rgb(60,60,60), 0 0 40px rgb(60,60,60), 0 0 50px rgb(60,60,60), 0 0 60px rgb(60,60,60), 0 0 70px rgb(60,60,60);
 }
 
 .notfound404 h4 {
@@ -720,6 +721,13 @@ button#resume:hover {
     border: 1px solid var(--accent-color);
     padding: 0.4rem 1.2rem;
     border-radius: 4rem;
+    transition: background 0.2s ease-in-out;
+}
+
+.notfound404 a:hover {
+    cursor: pointer;
+    color: var(--primary-text-color);
+    background: var(--secondary-accent);
 }
 
 /* FOOTER */
