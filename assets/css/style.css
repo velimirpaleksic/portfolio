@@ -679,6 +679,49 @@ button#resume:hover {
     color: var(--secondary-accent);
 }
 
+/* NOT FOUND 404*/
+.notfound404 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 6rem 0rem;
+}
+
+.notfound404 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notfound404 .inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.notfound404 h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.notfound404 h4 {
+    font-weight: 400;
+}
+
+.notfound404 a {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 0.4rem 1.2rem;
+    border-radius: 4rem;
+}
+
 /* FOOTER */
 footer {
     margin-bottom: 5rem;
