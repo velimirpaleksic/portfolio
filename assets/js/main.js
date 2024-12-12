@@ -89,29 +89,3 @@ function selectProjects(button) {
         commercialSection.style.display = "flex";
     }
 }
-
-/*
-    SMOOTH SCROLL TO ELEMENT
-*/
-function scrollToElement(selector, duration = 500) {
-    const element = document.querySelector(selector);
-    if (!element) return;
-
-    const start = window.scrollY;
-    const end = element.getBoundingClientRect().top + start;
-    const distance = end - start;
-    let startTime = null;
-
-    function step(timestamp) {
-        if (!startTime) startTime = timestamp;
-        const progress = timestamp - startTime;
-        const percent = Math.min(progress / duration, 1);
-        window.scrollTo(0, start + distance * percent);
-
-        if (percent < 1) {
-            requestAnimationFrame(step);
-        }
-    }
-
-    requestAnimationFrame(step);
-}
