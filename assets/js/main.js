@@ -115,5 +115,3 @@ function scrollToElement(selector, duration = 500) {
 
     requestAnimationFrame(step);
 }
-
-//scrollToElement("#target", 800);
