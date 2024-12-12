@@ -8,7 +8,7 @@ skillElements.forEach(skill => {
         let randomRotation;
         
         do {
-            randomRotation = Math.random() * 60 - 30;
+            randomRotation = Math.random() * 60 - 40;
         } while (randomRotation > -15 && randomRotation < 15);
 
         const element = skill.querySelector("svg, img");
