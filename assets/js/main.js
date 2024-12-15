@@ -106,6 +106,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.querySelectorAll('.projects .thumbnail img').forEach(img => {
+        img.addEventListener('click', () => {
+            modalImg.src = img.src;
+            modal.style.display = 'flex';
+        });
+    });
+
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
     });

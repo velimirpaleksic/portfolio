@@ -561,6 +561,7 @@ button#resume:hover {
 }
 
 .projects .project img:hover {
+    cursor: pointer;
     transform: scale(1.05);
 }
 
