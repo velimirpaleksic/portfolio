@@ -481,7 +481,7 @@ button#resume:hover {
     cursor: pointer;
 }
 
-.popup-img {
+#popup-img {
     height: auto;
     width: 100%;
 }
