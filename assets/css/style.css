@@ -481,6 +481,11 @@ button#resume:hover {
     cursor: pointer;
 }
 
+.popup-img {
+    height: auto;
+    width: 100%;
+}
+
 /* SELECT TAB */
 .select-tab {
     width: 100%;
