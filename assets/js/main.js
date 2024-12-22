@@ -91,7 +91,7 @@ function selectProjects(button) {
 }
 
 /*
-    CERTIFICATE POPUP
+    POPUP MODAL
 */
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('popup-modal');
@@ -108,7 +108,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.projects .thumbnail img').forEach(img => {
         img.addEventListener('click', () => {
-            modalImg.src = img.src;
+            const originalSrc = img.src.replace('/projects/', '/projects/original/').replace('.webp', '.png');
+            modalImg.src = originalSrc;
             modal.style.display = 'flex';
         });
     });
