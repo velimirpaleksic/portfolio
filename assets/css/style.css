@@ -491,6 +491,25 @@ button#resume:hover {
     object-position: top;
 }
 
+@media (min-width: 1024px) {
+    #popup-img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #popup-img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    #popup-img {
+        width: 99%;
+    }
+}
+
+
 /* SELECT TAB */
 .select-tab {
     width: 100%;
