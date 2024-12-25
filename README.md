@@ -12,6 +12,7 @@
 ### Sections 📚
 - About me
 - Skills
+- Clients
 - Certificates
 - Projects
 - Minimalistic version
