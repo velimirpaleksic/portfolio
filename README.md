@@ -14,5 +14,6 @@
 - Skills
 - Clients
 - Certificates
+- Education
 - Projects
 - Minimalistic version
