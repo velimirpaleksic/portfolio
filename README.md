@@ -11,9 +11,9 @@
 
 ### Sections 📚
 - About me
-- Experience
+- Experience (soon)
 - Skills
-- Customers
+- Customers (soon)
 - Certificates
 - Projects
 - Minimalistic version
