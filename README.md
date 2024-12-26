@@ -12,8 +12,6 @@
 ### Sections 📚
 - About me
 - Skills
-- Clients
 - Certificates
-- Education
 - Projects
 - Minimalistic version
