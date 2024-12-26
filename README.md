@@ -11,6 +11,7 @@
 
 ### Sections 📚
 - About me
+- Education
 - Skills
 - Certificates
 - Projects
