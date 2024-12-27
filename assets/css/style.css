@@ -144,7 +144,7 @@ body {
 .title hr {
     border: none;
     height: 1px;
-    background: linear-gradient(to right, rgb(100,100,100,0.4), rgba(0,0,0, 0));
+    background: linear-gradient(to right, rgba(160, 160, 160, 1), rgba(100, 100, 100, 0.4), rgba(0,0,0, 0));
 }
 
 /* TOP BAR*/
@@ -270,7 +270,7 @@ body {
     transform: translateX(-50%);
     background: rgba(0,0,0, 0.1);
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(2px);
     border-radius: 0.6rem;
     z-index: 9999;
 }
@@ -376,6 +376,61 @@ button#resume:hover {
     margin-right: 0.4rem;
     fill: var(--icon-color);
     transform-origin: center;
+}
+
+/* CLIENTS*/
+.clients {
+    position: relative;
+    overflow: hidden;
+}
+
+.clients .slider {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.clients .slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1rem;
+}
+
+.clients .slider-item img {
+    height: 3rem;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.clients .prev,
+.clients .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(10, 10, 10, 0.6);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    z-index: 9;
+    border-radius: 0.1rem;
+    backdrop-filter: blur(4px);
+    --webkit-backdrop-filter: blur(4px);
+    transition: background 0.2s ease-in-out, color 0.1s ease-in-out;
+}
+.clients .prev:hover,
+.clients .next:hover {
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+}
+.clients .prev {
+    left: 0.1rem;
+}
+.clients .next {
+    right: 0.1rem;
 }
 
 /* CERTIFICATES */
