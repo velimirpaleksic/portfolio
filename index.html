@@ -156,16 +156,74 @@
             </div>
             <section class="experience">
                 <div class="select-tab">
-                    <button onclick="selectProjects(this)" class="selected">Work</button>
-                    <button onclick="selectProjects(this)">Education</button>
+                    <button onclick="changeTab(this)" class="selected">Work</button>
+                    <button onclick="changeTab(this)">Education</button>
                 </div>
-                <div class="display-tab">
-                    <div class="tab-content">
-                        <img loading="lazy" src="" alt="Logo">
-                        <div class="text-box">
-                            <p>January xxxx - December xxxx</p>
-                            <h4>Company Name</h4>
-                            <h5>Job Title</h5>
+                <div class="wrapper" id="work" style="display: flex;">
+                    <div class="container">
+                        <div class="inner">
+                            <img loading="lazy" src="assets/img/experience/" alt="Logo">
+                            <div class="column">
+                                <p>Company Name</p>
+                                <p>January xxxx - December xxxx</p>
+                            </div>
+                        </div>
+
+                        <div class="job-info">
+                            <p>Job Title</p>
+                            <ul>
+                                <li>This and that</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="inner">
+                            <img loading="lazy" src="assets/img/experience/" alt="Logo">
+                            <div class="column">
+                                <p>Company Name</p>
+                                <p>January xxxx - December xxxx</p>
+                            </div>
+                        </div>
+
+                        <div class="job-info">
+                            <p>Job Title</p>
+                            <ul>
+                                <li>This and that</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper" id="education" style="display: none;">
+                    <div class="container">
+                        <div class="inner">
+                            <img loading="lazy" src="assets/img/experience/" alt="Logo">
+                            <div class="column">
+                                <p>Company Name</p>
+                                <p>January xxxx - December xxxx</p>
+                            </div>
+                        </div>
+
+                        <div class="job-info">
+                            <p>Job Title</p>
+                            <ul>
+                                <li>This and that</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="inner">
+                            <img loading="lazy" src="assets/img/experience/" alt="Logo">
+                            <div class="column">
+                                <p>Company Name</p>
+                                <p>January xxxx - December xxxx</p>
+                            </div>
+                        </div>
+
+                        <div class="job-info">
+                            <p>Job Title</p>
+                            <ul>
+                                <li>This and that</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -263,8 +321,8 @@
             </div>
             <section class="projects">
                 <div class="select-tab">
-                    <button onclick="selectProjects(this)">Personal</button>
-                    <button onclick="selectProjects(this)" class="selected">Commercial</button>
+                    <button onclick="changeTab(this)">Personal</button>
+                    <button onclick="changeTab(this)" class="selected">Commercial</button>
                 </div>
 
                 <div id="personal" style="display: none;">
