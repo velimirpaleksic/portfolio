@@ -358,7 +358,7 @@ button#resume:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem 0.4rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 0.3rem;
     background: var(--button-selected);
     color: var(--primary-text-color);
