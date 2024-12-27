@@ -1,6 +1,4 @@
-/*
-    SKILLS
-*/
+/* SKILLS */
 const skillElements = document.querySelectorAll(".skills .skill, .technology, .preview");
 
 skillElements.forEach(skill => {
@@ -25,24 +23,27 @@ skillElements.forEach(skill => {
     });
 });
 
-/* 
-    WAVING HAND
-*/
-document.addEventListener("DOMContentLoaded", () => {
-    const wavingHand = document.getElementById("waving-hand");
-  
-    wavingHand.addEventListener("mouseenter", () => {
-        wavingHand.classList.add("waving");
-    });
-  
-    wavingHand.addEventListener("mouseleave", () => {
-        wavingHand.classList.remove("waving");
-    });
-});  
+/* CLIENTS SLIDER */
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slider-item');
+const totalSlides = slides.length;
 
-/*
-    TEXT SCRAMBLE
-*/
+function moveSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
+    updateSliderPosition();
+}
+function updateSliderPosition() {
+    const slider = document.querySelector('.slider');
+    const offset = -currentIndex * 100;
+    slider.style.transform = `translateX(${offset}%)`;
+}
+
+/* TEXT SCRAMBLE */
 document.querySelectorAll(".title h1").forEach(title => {
     const originalText = title.textContent;
 
@@ -68,9 +69,7 @@ document.querySelectorAll(".title h1").forEach(title => {
     });
 });
 
-/*
-    SELECT PROJECTS
-*/
+/* SELECT PROJECTS */
 function selectProjects(button) {
     const parent = button.parentElement;
     const buttons = parent.querySelectorAll("button");
@@ -90,10 +89,19 @@ function selectProjects(button) {
     }
 }
 
-/*
-    POPUP MODAL
-*/
 document.addEventListener('DOMContentLoaded', function () {
+    /* WAVING HAND */
+    const wavingHand = document.getElementById("waving-hand");
+  
+    wavingHand.addEventListener("mouseenter", () => {
+        wavingHand.classList.add("waving");
+    });
+  
+    wavingHand.addEventListener("mouseleave", () => {
+        wavingHand.classList.remove("waving");
+    });
+
+    /* POPUP MODAL */
     const modal = document.getElementById('popup-modal');
     const modalImg = document.getElementById('popup-img');
     const closeBtn = document.querySelector('.popup-close');
