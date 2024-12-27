@@ -13,7 +13,7 @@
 - About me
 - Experience (soon)
 - Skills
-- Customers (soon)
+- Clients
 - Certificates
 - Projects
 - Minimalistic version
