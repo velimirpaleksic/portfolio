@@ -175,10 +175,10 @@ body {
 .top-bar .gradient-text span {
     font-weight: 550;
     display: inline-block;
-    background: linear-gradient(to right, rgb(236, 236, 236), rgb(124, 124, 124));
+    background: linear-gradient(to right, rgb(240, 240, 240), rgba(150, 150, 150), rgba(100, 100, 100, 0.1));
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 0 -0.4px;
+    margin: 0 -1px;
     transition: margin 0.2s ease-in-out;
 }
 
@@ -271,7 +271,7 @@ body {
     transform: translateX(-50%);
     background: rgba(0,0,0, 0.1);
     backdrop-filter: blur(2px);
-    --webkit-backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 0.6rem;
     z-index: 9999;
 }
@@ -349,7 +349,7 @@ button#resume:hover {
     border-radius: 0.4rem;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     display: flex;
     align-items: flex-start;
@@ -451,7 +451,7 @@ button#resume:hover {
     z-index: 9;
     border-radius: 0.1rem;
     backdrop-filter: blur(4px);
-    --webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     transition: background 0.2s ease-in-out, color 0.1s ease-in-out;
 }
 .clients .prev:hover,
