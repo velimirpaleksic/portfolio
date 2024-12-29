@@ -27,6 +27,7 @@ skillElements.forEach(skill => {
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slider-item');
 const totalSlides = slides.length;
+let autoSlideInterval;
 
 function moveSlide(direction) {
     currentIndex += direction;
@@ -37,11 +38,28 @@ function moveSlide(direction) {
     }
     updateSliderPosition();
 }
+
 function updateSliderPosition() {
     const slider = document.querySelector('.slider');
     const offset = -currentIndex * 100;
     slider.style.transform = `translateX(${offset}%)`;
 }
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(() => {
+        moveSlide(1);
+    }, 5000);
+}
+
+autoSlideInterval = setInterval(() => {
+    moveSlide(1);
+}, 5000);
+
+document.querySelector("#slider-controls").addEventListener('click', () => {
+    moveSlide(1);
+    resetAutoSlide();
+});
 
 /* TEXT SCRAMBLE */
 document.querySelectorAll(".title h1").forEach(title => {
