@@ -13,11 +13,12 @@
     --border-color: #444444;
     --dark-border-color: rgb(20, 20, 20);
     --button-selected: rgba(10, 10, 10, 0.4);
+    --button-selected-hover: rgba(30, 30, 30, 0.2);
 
     --link-hover: var(--secondary-accent);
     --icon-color: #CCCCCC;
 
-    --star-color: rgba(180, 180, 180, 0.4);
+    --vertical-line: rgba(100, 100, 100, 0.1);
 }
 
 /* SMOOTH SCORLLING */
@@ -359,7 +360,7 @@ button#resume:hover {
 
 .experience .container {
     padding-left: 1.4rem;
-    border-left: 1px solid rgba(200,200,200,0.1);
+    border-left: 1px solid var(--vertical-line);
 }
 
 .experience .container .inner {
@@ -710,6 +711,7 @@ button#resume:hover {
 }
 
 .projects .project .info .text-box p {
+    border-left: 1px solid var(--vertical-line);
     color: var(--text-color-secondary);
     padding: 0 0 0 0.6rem;
 }
@@ -766,10 +768,11 @@ button#resume:hover {
     background: var(--button-selected);
     border-radius: 0.2rem;
 
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background 0.3s ease-in-out;
 }
 
 .projects .project .previews .preview a:hover {
+    background: var(--button-selected-hover);
     color: var(--text-color-secondary);
 }
 
