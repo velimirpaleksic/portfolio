@@ -52,17 +52,15 @@ function resetAutoSlide() {
     }, 5000);
 }
 
-if(document.querySelector("#slider-controls") {
-    autoSlideInterval = setInterval(() => {
-        moveSlide(1);
-    }, 5000);
-    
-    document.querySelector("#slider-controls").addEventListener('click', () => {
-        moveSlide(1);
-        resetAutoSlide();
-    });
-}
-    
+autoSlideInterval = setInterval(() => {
+    moveSlide(1);
+}, 5000);
+
+document.querySelector("#slider-controls").addEventListener('click', () => {
+    moveSlide(1);
+    resetAutoSlide();
+});
+
 /* TEXT SCRAMBLE */
 document.querySelectorAll(".title h1").forEach(title => {
     const originalText = title.textContent;
