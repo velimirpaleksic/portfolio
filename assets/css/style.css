@@ -167,7 +167,7 @@ body {
     scale: 1.2;
 }
 
-.top-bar .gradient-text {
+.top-bar .name-text {
     user-select: none;
     display: flex;
     font-size: 2rem;
@@ -176,7 +176,7 @@ body {
     color: var(--text-color-secondary);
 }
 
-.top-bar .gradient-text:hover {
+.top-bar .name-text:hover {
     letter-spacing: 1px;
 }
 
