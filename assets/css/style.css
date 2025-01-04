@@ -537,7 +537,7 @@ button#resume:hover {
 }
 
 /* POPUP MODAL */
-.popup-modal {
+#popup-modal {
     display: none;
     position: fixed;
     z-index: 999;
@@ -548,6 +548,12 @@ button#resume:hover {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+}
+
+#popup-modal .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .popup-content {
@@ -569,8 +575,6 @@ button#resume:hover {
 
 #popup-img {
     display: block;
-    max-width: 100%;
-    max-height: 80%;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -578,20 +582,21 @@ button#resume:hover {
 }
 
 @media (min-width: 1024px) {
-    #popup-img {
+    #popup-modal .wrapper {
         width: 50%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    #popup-img {
+    #popup-modal .wrapper {
         width: 60%;
     }
 }
 
 @media (max-width: 767px) {
-    #popup-img {
-        width: 99%;
+    #popup-modal .wrapper {
+        max-height: 90%;
+        width: auto;
     }
 }
 
