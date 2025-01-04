@@ -408,7 +408,10 @@ button#resume:hover {
 /* CLIENTS*/
 .clients {
     position: relative;
-    overflow: hidden;
+}
+
+.clients .wrapper {
+    overflow-x: hidden;
 }
 
 .clients .slider {

@@ -43,6 +43,7 @@
 
         <!-- JAVASCRIPT -->
         <script defer src="assets/js/main.js"></script>
+        <script defer src="assets/js/popup-modal.js"></script>
 
         <!-- GOOGLE ANALYTICS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9NN89HPPJ"></script>
@@ -282,30 +283,32 @@
                 <h1>Clients</h1>
                 <hr>
             </div>
-            <seciton class="clients">
-                <div class="slider">
-                    <div class="slider-item">
-                        <img src="assets/img/clients/fresco.webp" alt="Fresco Client">
-                    </div>
-                    <div class="slider-item">
-                        <img src="assets/img/clients/osnovna-skola-sveti-sava.webp" alt="Osnovna Škola Sveti Sava Client">
-                    </div>
-                    <div class="slider-item">
-                        <img src="assets/img/clients/pizza-corner.webp" alt="Pizza Corner Client">
-                    </div>
-                    <div class="slider-item">
-                        <img src="assets/img/clients/sapphire.webp" alt="Sapphire Client">
-                    </div>
-                    <div class="slider-item">
-                        <img src="assets/img/clients/sportnet.webp" alt="SportNet Client">
-                    </div>
-                    <div class="slider-item">
-                        <img src="assets/img/clients/vexsystems.webp" alt="VexSystems Client">
+            <section class="clients">
+                <div class="wrapper">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <img src="assets/img/clients/fresco.webp" alt="Fresco Client">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/img/clients/osnovna-skola-sveti-sava.webp" alt="Osnovna Škola Sveti Sava Client">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/img/clients/pizza-corner.webp" alt="Pizza Corner Client">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/img/clients/sapphire.webp" alt="Sapphire Client">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/img/clients/sportnet.webp" alt="SportNet Client">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/img/clients/vexsystems.webp" alt="VexSystems Client">
+                        </div>
                     </div>
                 </div>
-                <button class="prev" id="slider-controls" onclick="moveSlide(-1)">❮</button>
-                <button class="next" id="slider-controls" onclick="moveSlide(1)">❯</button>
-            </seciton>
+                <button class="prev" id="prev-button">❮</button>
+                <button class="next" id="next-button">❯</button>
+            </section>
 
             <!-- POPUP -->
             <div id="popup-modal" class="popup-modal">
