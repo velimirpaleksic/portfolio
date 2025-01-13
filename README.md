@@ -7,7 +7,7 @@
 
 ## **Sections** 📚
 - About me
-- Experience
+- Experience (soon)
 - Skills
 - Clients
 - Certificates
