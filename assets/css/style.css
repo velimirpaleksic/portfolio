@@ -1,9 +1,9 @@
 /* ROOT */
 :root {
-    --accent-color: #FF0000;
-    --secondary-accent: #B22222;
+    --accent-color: #9B30FF; /* Strong, vivid purple */
+    --secondary-accent: #872BDF; /* Slightly deeper but still bright purple */
 
-    --background-color: black;
+    --background-color: radial-gradient(ellipse at bottom, #0a1727 0%, #0b0c0f 100%);
 
     --text-color-primary: #FFFFFF;
     --text-color-secondary: #BBBBBB;
@@ -41,7 +41,6 @@ a:hover {
 /* MAIN */
 main {
     height: 100%;
-    background-image: radial-gradient(circle, rgba(100, 100, 100, 0.1) 1px, transparent 1px);
     background-size: 2.5rem 2.5rem;
     max-width: 900px;
     margin: 0 auto;
@@ -63,7 +62,7 @@ main {
     object-fit: cover;
 }
 .splash#green {
-    background: radial-gradient(circle, rgba(40, 160, 40, 0.15) 0%, rgba(40, 160, 40, 0) 60%);
+    background: radial-gradient(circle, rgba(40, 160, 40, 0.1) 0%, rgba(40, 160, 40, 0) 60%);
     bottom: -10%;
     left: 5%;
     height: 32rem;
@@ -103,7 +102,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--text-color-primary);
     line-height: 1.6;
-    background: radial-gradient(ellipse at bottom, #0a1727 0%, #0b0c0f 100%);
+    background: var(--background-color);
     overflow-x: hidden;
 }
 
