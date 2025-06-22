@@ -47,6 +47,10 @@ main {
     padding: 20px;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 /* RESET STYLING */
 *, h1,h2,h3,h4,h5,h6,span {
     margin: 0;
@@ -158,6 +162,7 @@ body {
 
 .top-bar img {
     width: 2rem;
+    height: 2rem;
     transition: scale 0.2s ease-in-out;
 }
 
@@ -274,7 +279,8 @@ body {
     padding: 0.4rem 0.8rem;
 }
 
-.social a {
+.social a,
+.social span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,15 +293,18 @@ body {
     transition: border-radius 0.2s ease-in-out;
 }
 
-.social a img {
+.social a img,
+.social span img {
     transition: transform 0.3s;
 }
 
-.social a:hover {
+.social a:hover,
+.social span:hover {
     border-radius: 0.6rem;
 }
 
-.social a:hover img {
+.social a:hover img,
+.social span:hover img {
     transform: scale(1.1);
 }
 
@@ -328,7 +337,8 @@ button#resume:hover {
 }
 
 /* SOCIAL ICONS */
-.social a img {
+.social a img,
+.social span img {
     width: 24px;
     height: 24px;
     fill: currentColor;

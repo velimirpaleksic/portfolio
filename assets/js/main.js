@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     /* CLIENTS SLIDER */
     let currentIndex = 0;
-    const slides = document.querySelectorAll('.slider-item');
+    const slides = document.querySelectorAll(".slider-item");
     const totalSlides = slides.length;
     let autoSlideInterval;
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateSliderPosition();
     }
     function updateSliderPosition() {
-        const slider = document.querySelector('.slider');
+        const slider = document.querySelector(".slider");
         const offset = -currentIndex * 100;
         slider.style.transform = `translateX(${offset}%)`;
     }
@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
 
     if (document.querySelector("#prev-button")) {
-        document.querySelector("#prev-button").addEventListener('click', () => {
+        document.querySelector("#prev-button").addEventListener("click", () => {
             moveSlide(-1);
             resetAutoSlide();
         });
         
-        document.querySelector("#next-button").addEventListener('click', () => {
+        document.querySelector("#next-button").addEventListener("click", () => {
             moveSlide(1);
             resetAutoSlide();
         });    
@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         title.addEventListener("mouseenter", () => {
             const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            let scrambledText = Array.from(originalText).map(char => (char === ' ' ? ' ' : chars.charAt(Math.floor(Math.random() * chars.length))));
+            let scrambledText = Array.from(originalText).map(char => (char === " " ? " " : chars.charAt(Math.floor(Math.random() * chars.length))));
             let index = 0;
 
             const interval = setInterval(() => {
                 scrambledText = scrambledText.map((char, i) =>
-                    i >= index ? (originalText[i] === ' ' ? ' ' : chars.charAt(Math.floor(Math.random() * chars.length))) : char
+                    i >= index ? (originalText[i] === " " ? " " : chars.charAt(Math.floor(Math.random() * chars.length))) : char
                 );
 
                 if (index < originalText.length) {
@@ -76,4 +76,19 @@ document.addEventListener('DOMContentLoaded', function () {
     wavingHand.addEventListener("mouseleave", () => {
         wavingHand.classList.remove("waving");
     });
+
+    /* EMAIL */
+    const emailButton = document.getElementById("email");
+    
+    if (emailButton) 
+    {
+        emailButton.addEventListener("click", function () {
+            try {
+                navigator.clipboard.writeText("velimir.paleksic@gmail.com");
+                alert("Email copied to clipboard! velimir.paleksic@gmail.com");
+            } catch {
+                alert("velimir.paleksic@gmail.com");
+            }
+        })
+    }
 });

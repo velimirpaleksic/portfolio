@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     /* SKILLS */
     const skillElements = document.querySelectorAll(".skills .skill, .technology, .preview");
 
