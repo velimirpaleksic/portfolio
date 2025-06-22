@@ -158,7 +158,6 @@ body {
 
 .top-bar img {
     width: 2rem;
-    height: 1.8rem;
     transition: scale 0.2s ease-in-out;
 }
 
@@ -171,7 +170,7 @@ body {
     display: flex;
     font-size: 2rem;
     font-weight: 600;
-    transition: 0.2s ease-in-out;
+    transition: letter-spacing 0.2s ease-in-out;
     color: var(--text-color-primary);
 }
 
@@ -224,7 +223,6 @@ body {
 .about-me .personal #waving-hand {
     margin-left: 0.4rem;
     width: 1.4rem;
-    height: 1.4rem;
 }
 
 .about-me .personal .box .description {
@@ -696,7 +694,7 @@ button#resume:hover {
     border-radius: 1rem;
 }
 
-.projects .project .info h4 {
+.projects .project .info h2 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.4rem;
@@ -911,7 +909,6 @@ footer .car-icon img:hover {
 
 footer .logo img {
     width: 2rem;
-    height: 1.8rem;
     transition: scale 0.3s ease;
 }
 
