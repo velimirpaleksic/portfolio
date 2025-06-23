@@ -227,7 +227,6 @@ body {
 
 .about-me .personal #waving-hand {
     margin-left: 0.4rem;
-    width: 1.4rem;
 }
 
 .about-me .personal .box .description {
@@ -919,6 +918,7 @@ footer .car-icon img:hover {
 
 footer .logo img {
     width: 2rem;
+    height: 2rem;
     transition: scale 0.3s ease;
 }
 
