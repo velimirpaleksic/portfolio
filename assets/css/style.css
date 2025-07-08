@@ -299,6 +299,7 @@ body {
 
 .social a:hover,
 .social span:hover {
+    cursor: pointer;
     border-radius: 0.6rem;
 }
 
@@ -747,6 +748,10 @@ button#resume:hover {
     height: 1.4rem;
     margin-right: 0.4rem;
     fill: var(--button-text);
+}
+
+.projects .project .technologies .technology img:hover {
+    cursor: auto;
 }
 
 .projects .project .previews {
