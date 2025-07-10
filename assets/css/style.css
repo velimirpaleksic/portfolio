@@ -1,9 +1,10 @@
 /* ROOT */
 :root {
-    --accent-color: #9B30FF; /* Strong, vivid purple */
-    --secondary-accent: #872BDF; /* Slightly deeper but still bright purple */
+    --accent-color: #9B30FF;
+    --secondary-accent: #872BDF;
 
-    --background-color: radial-gradient(ellipse at bottom, #0a1727 0%, #0b0c0f 100%);
+    --dots-background: rgba(255, 255, 255, 0.05);
+    --background-color: linear-gradient(to top right, #130a27 0%, #010511 100%);
 
     --text-color-primary: #FFFFFF;
     --text-color-secondary: #BBBBBB;
@@ -12,13 +13,15 @@
     --button-text: #FFFFFF;
     --border-color: #444444;
     --dark-border-color: rgb(20, 20, 20);
-    --button-selected: rgba(10, 10, 10, 0.4);
-    --button-selected-hover: rgba(30, 30, 30, 0.2);
+    --button-selected: rgb(0, 0, 0, 0.4);
+    --button-selected-hover: rgba(30, 30, 30, 0.4);
 
     --link-hover: var(--secondary-accent);
     --icon-color: #CCCCCC;
 
     --vertical-line: rgba(100, 100, 100, 0.1);
+    
+    --social-box-shadow: 4px 4px 5px rgba(155, 48, 255, 0.1);
 }
 
 /* SMOOTH SCORLLING */
@@ -41,14 +44,16 @@ a:hover {
 /* MAIN */
 main {
     height: 100%;
-    background-size: 2.5rem 2.5rem;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    background-image: radial-gradient(var(--dots-background) 1px, transparent 0);
+    background-size: 60px 60px;
+    background-repeat: repeat;
 }
 
 h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 /* RESET STYLING */
@@ -56,49 +61,6 @@ h1 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* COLOR SPLASH */
-.splash {
-    z-index: -1;
-    position: fixed;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.splash#green {
-    background: radial-gradient(circle, rgba(40, 160, 40, 0.1) 0%, rgba(40, 160, 40, 0) 60%);
-    bottom: -10%;
-    left: 5%;
-    height: 32rem;
-    width: 32rem;
-}
-.splash#red {
-    background: radial-gradient(circle, rgba(160, 40, 40, 0.1) 0%, rgba(160, 40, 40, 0) 60%);
-    top: 15%;
-    left: 25%; right: 0;
-    height: 32rem;
-    width: 32rem;
-}
-.splash#blue {
-    background: radial-gradient(circle, rgba(40, 72, 160, 0.2) 0%, rgba(40, 72, 160, 0) 60%);
-    top: 40%;
-    left: 50%;
-    height: 24rem;
-    width: 24rem;
-}
-.splash#yellow {
-    background: radial-gradient(circle, rgba(201, 190, 40, 0.05) 0%, rgba(201, 190, 40, 0) 60%);
-    top: 0%;
-    left: 0%;
-    height: 16rem;
-    width: 16rem;
-}
-.splash#white {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 65%);
-    top: 0%;
-    left: 70%;
-    height: 48rem;
-    width: 48rem;
 }
 
 /* BODY */
@@ -264,7 +226,7 @@ body {
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0,0,0, 0.1);
+    background: rgba(0,0,0,0.2);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 0.6rem;
@@ -285,11 +247,12 @@ body {
     justify-content: center;
     width: 2.8rem;
     height: 2.8rem;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.6);
     border: none;
     border-radius: 50%;
     color: var(--icon-color);
-    transition: border-radius 0.2s ease-in-out;
+    transition: border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
 }
 
 .social a img,
@@ -301,6 +264,7 @@ body {
 .social span:hover {
     cursor: pointer;
     border-radius: 0.6rem;
+    box-shadow: var(--social-box-shadow);
 }
 
 .social a:hover img,
@@ -414,60 +378,35 @@ button#resume:hover {
 
 /* CLIENTS*/
 .clients {
-    position: relative;
-}
-
-.clients .wrapper {
-    overflow-x: hidden;
-}
-
-.clients .slider {
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.clients .slider-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 1rem;
-}
-
-.clients .slider-item img {
-    height: 3rem;
-    width: auto;
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.clients .prev,
-.clients .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(10, 10, 10, 0.6);
-    color: white;
-    border: none;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    font-size: 1.4rem;
-    z-index: 9;
-    border-radius: 0.1rem;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    transition: background 0.2s ease-in-out, color 0.1s ease-in-out;
+.client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.clients .prev:hover,
-.clients .next:hover {
-    color: black;
-    background: rgba(255, 255, 255, 0.8);
+
+.client-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
-.clients .prev {
-    left: 0.1rem;
+
+.client-item img:hover {
+    transform: scale(1.2);
 }
-.clients .next {
-    right: 0.1rem;
+
+@media (max-width: 600px) {
+    .clients {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* CERTIFICATES */
@@ -512,10 +451,9 @@ button#resume:hover {
 .certificates .certificate img {
     width: 100%;
     height: auto;
-    filter: brightness(0.6) grayscale(0.9);
     object-fit: cover;
     object-position: center;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .certificates .certificate img:hover {
@@ -523,7 +461,6 @@ button#resume:hover {
 }
 
 .certificates .certificate:hover img {
-    filter: brightness(1);
     transform: scale(1.4);
 }
 
@@ -673,7 +610,7 @@ button#resume:hover {
 .projects .project .thumbnail {
     overflow: hidden;
     width: 100%;
-    height: 16rem;
+    height: 18rem;
 }
 
 .projects .project img {
@@ -726,7 +663,7 @@ button#resume:hover {
 
 .projects .project .technologies {
     margin-top: 1.6rem;
-    gap: 0.4rem;
+    gap: 0.6rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -735,7 +672,7 @@ button#resume:hover {
 
 .projects .project .technologies .technology {
     user-select: none;
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.6rem;
     border-radius: 0.2rem;
     background: var(--button-selected);
     display: flex;

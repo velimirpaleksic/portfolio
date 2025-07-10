@@ -43,8 +43,7 @@
 
         <!-- JAVASCRIPT -->
         <script defer src="assets/js/main.js"></script>
-        <script defer src="assets/js/change-tab.js"></script>
-        <script defer src="assets/js/popup-modal.js"></script>
+        <script defer src="assets/js/index.js"></script>
         <script defer src="assets/js/animations.js"></script>
 
         <!-- GOOGLE ANALYTICS -->
@@ -60,14 +59,7 @@
     </head>
     <body>
         <main>
-            <div class="decoration">
-                <div class="splash" id="red"></div>
-                <div class="splash" id="green"></div>
-                <div class="splash" id="yellow"></div>
-                <div class="splash" id="blue"></div>
-                <div class="splash" id="white"></div>
-            </div>
-            
+
             <section class="top-bar">
                 <a href="index.html">
                     <img width="100px" height="100px" alt="Logo" src="assets/img/logo/white.png">
@@ -93,7 +85,7 @@
                             <h1>,</h1>
                         </div>
                         <p class="description">a <accent>full-stack developer</accent> and <accent>security enthusiast</accent>.</p>
-                        <p class="location">Istočno Novo Sarajevo, Bosnia and Herzegovina 📌</p>
+                        <p class="location">Istočno Sarajevo, Bosnia and Herzegovina 📌</p>
                     </div>
                 </div>
             </section>
@@ -108,16 +100,8 @@
                     <p>JavaScript</p>
                 </div>
                 <div class="skill">
-                    <img alt="Python" src="assets/img/icons/python.svg">
-                    <p>Python</p>
-                </div>
-                <div class="skill">
                     <img alt="Wordpress" src="assets/img/icons/wordpress.svg">
                     <p>Wordpress</p>
-                </div>
-                <div class="skill">
-                    <img alt="JavaScript" src="assets/img/icons/c-sharp.svg">
-                    <p>C#</p>
                 </div>
                 <div class="skill">
                     <img alt="MySql" src="assets/img/icons/mysql.svg">
@@ -128,12 +112,24 @@
                     <p>PHP</p>
                 </div>
                 <div class="skill">
+                    <img alt="Python" src="assets/img/icons/python.svg">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img alt="JavaScript" src="assets/img/icons/c-sharp.svg">
+                    <p>C#</p>
+                </div>
+                <div class="skill">
                     <img alt="Photoshop" src="assets/img/icons/photoshop.svg">
-                    <p>Photoshop</p>
+                    <p>Adobe Photoshop</p>
                 </div>
                 <div class="skill">
                     <img alt="Burp Suite" src="assets/img/icons/burp-suite.svg">
                     <p>Burp Suite</p>
+                </div>
+                <div class="skill">
+                    <img alt="SEO" src="assets/img/icons/google.svg">
+                    <p>SEO</p>
                 </div>
             </section>
 
@@ -270,31 +266,30 @@
                 <hr>
             </div>
             <section class="clients">
-                <div class="wrapper">
-                    <div class="slider">
-                        <div class="slider-item">
-                            <img width="300px" height="60px" loading="lazy" src="assets/img/clients/vexsystems.webp" alt="VexSystems Client">
-                        </div>
-                        
-                        <div class="slider-item">
-                            <img width="300px" height="60px" loading="lazy" src="assets/img/clients/pavle-detailing.webp" alt="Pavle Detailing Client">
-                        </div>
-                        <div class="slider-item">
-                            <img width="300px" height="60px" loading="lazy" src="assets/img/clients/osnovna-skola-sveti-sava.webp" alt="Osnovna Škola Sveti Sava Client">
-                        </div>
-                        <div class="slider-item">
-                            <img width="300px" height="60px" loading="lazy" src="assets/img/clients/sapphire.webp" alt="Sapphire Client">
-                        </div>
-                        <div class="slider-item">
-                            <img width="300px" height="60px" loading="lazy" src="assets/img/clients/sportnet.webp" alt="SportNet Client">
-                        </div>
-                        <div class="slider-item">
-                            <img width="300px" height="60px" loading="lazy" src="assets/img/clients/sveti-petar-dabrobosanski.webp" alt="Sveti Petar Dabrobosanski Client">
-                        </div>
-                    </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/vexsystems.webp" alt="VexSystems Client">
                 </div>
-                <button class="prev" id="prev-button">❮</button>
-                <button class="next" id="next-button">❯</button>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/pavle-detailing.webp" alt="Pavle Detailing Client">
+                </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/sveti-petar-dabrobosanski.webp" alt="Sveti Petar Dabrobosanski Client">
+                </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/osnovna-skola-sveti-sava.webp" alt="Osnovna Škola Sveti Sava Client">
+                </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/sportnet.webp" alt="SportNet Client">
+                </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/sapphire.webp" alt="Sapphire Client">
+                </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/fresco.webp" alt="Fresco Client">
+                </div>
+                <div class="client-item">
+                    <img width="300px" height="60px" loading="lazy" src="assets/img/clients/pizza-corner.webp" alt="Pizza Corner Client">
+                </div>
             </section>
 
             <!-- POPUP -->
@@ -433,6 +428,10 @@
                             </div>
                             <div class="technologies">
                                 <div class="technology">
+                                    <img loading="lazy" alt="Source" src="assets/img/icons/demo.svg">
+                                    <p>Demo</p>
+                                </div>
+                                <div class="technology">
                                     <img loading="lazy" alt="Source" src="assets/img/icons/javascript.svg">
                                     <p>JavaScript</p>
                                 </div>
@@ -445,7 +444,7 @@
                                     </a>
                                 </div>
                                 <div class="preview">
-                                    <a target="_blank" href="https://vexsystems.github.io/osnovna-skola-sveti-sava/">
+                                    <a target="_blank" href="https://velimirpaleksic.github.io/osnovna-skola-sveti-sava/">
                                         <img loading="lazy" alt="Source" src="assets/img/icons/external-link.svg">
                                         Website 
                                     </a>
@@ -540,11 +539,11 @@
                 </div>
 
                 <div class="credits">
-                    <p>Made by <a target="_blank" href="https://github.com/velimirpaleksic">Velimir Paleksić</a>. Copyright © 2025 All rights reserved.</p>
+                    <p>Made by <a target="_blank" href="https://github.com/velimirpaleksic">Velimir Paleksić</a> • <a target="_blank" href="https://instagram.com/vex.systems">VexSystems</a>. Copyright © 2025 All rights reserved.</p>
                     <p>
-                        <a target="_blank" href="https://github.com/vexsystems">VexSystems GitHub</a> | 
-                        <a href="minimalistic.html">Minimalistic version</a> | 
-                        <a href="projects.html">Projects</a>
+                        <a href="projects.html">Projects</a> |
+                        <a target="_blank" href="https://github.com/vexsystems">GitHub</a> | 
+                        <a target="_blank" href="https://instagram.com/vex.systems">Instagram</a>
                     </p>
                 </div>
             </footer>

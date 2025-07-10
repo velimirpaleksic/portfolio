@@ -9,12 +9,4 @@
         <loc>https://velimirpaleksic.github.io/portfolio/projects</loc>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://velimirpaleksic.github.io/portfolio/minimalistic</loc>
-        <priority>0.5</priority>
-    </url>
-        <url>
-        <loc>https://velimirpaleksic.github.io/portfolio/404</loc>
-        <priority>0.1</priority>
-    </url>
 </urlset>
